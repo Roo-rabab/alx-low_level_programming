@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def is_palindrome(num):
     return str(num) == str(num)[::-1]
 
