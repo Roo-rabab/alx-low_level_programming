@@ -1,18 +1,1 @@
-#!/usr/bin/python3
-
-def is_palindrome(number):
-    return str(number) == str(number)[::-1]
-
-def find_largest_palindrome():
-    largest_palindrome = 0
-
-    for num1 in range(999, 99, -1):
-        for num2 in range(num1, 99, -1):
-            product = num1 * num2
-            if product > largest_palindrome and is_palindrome(product):
-                largest_palindrome = product
-
-    return largest_palindrome
-
-result = find_largest_palindrome()
-print("The largest palindrome made from the product of two 3-digit numbers is:", result)
+906609
